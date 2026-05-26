@@ -1,0 +1,51 @@
+{
+  "name": "@rentre-ax-market/n8n-client",
+  "version": "0.0.1",
+  "description": "Thin HTTP client for calling rentre's internal n8n workflow webhooks.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rentre-ax-market/n8n-client.git"
+  },
+  "homepage": "https://github.com/rentre-ax-market/n8n-client#readme",
+  "bugs": {
+    "url": "https://github.com/rentre-ax-market/n8n-client/issues"
+  },
+  "keywords": [
+    "n8n",
+    "webhook",
+    "rentre",
+    "ax",
+    "automation"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^20.0.0"
+  }
+}
